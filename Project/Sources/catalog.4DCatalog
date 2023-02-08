@@ -141,7 +141,7 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
-	<relation uuid="672A2B05BA550847A1740E29E8C62416" name_Nto1="fk_evenementBoutique_M1R" name_1toN="fk_evenementBoutique" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+	<relation uuid="672A2B05BA550847A1740E29E8C62416" name_Nto1="evenement" name_1toN="boutiques" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
 		<related_field kind="source">
 			<field_ref uuid="B4F0222F5B9A704895C902071B74D1BE" name="ID_EVENEMENT">
 				<table_ref uuid="F9282DAD17EA4B4AA1F55744317E69D2" name="BOUTIQUE"/>
@@ -158,7 +158,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="300E25044A3C91488BA84049DD7E0178" name_Nto1="Lien_27" name_1toN="Lien_27_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+	<relation uuid="300E25044A3C91488BA84049DD7E0178" name_Nto1="evenement_participe" name_1toN="participations" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
 		<related_field kind="source">
 			<field_ref uuid="29AFDF4DD1E1094782AF8391EB586C24" name="ID_EVENEMENT">
 				<table_ref uuid="3058E132D060E543B7A891BCC3EA58B2" name="PARTICIPE"/>
@@ -311,7 +311,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="28826D2DED4ADF43A9218788438C96AD" name_Nto1="Lien_37" name_1toN="Lien_37_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+	<relation uuid="28826D2DED4ADF43A9218788438C96AD" name_Nto1="evenement_borne" name_1toN="bornes_de_credit" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
 		<related_field kind="source">
 			<field_ref uuid="84EFB19C29321945828D1129C9449244" name="ID_EVENEMENT">
 				<table_ref uuid="0C12EA9388108549AD501E899DDA66DF" name="BORNE_CREDIT"/>

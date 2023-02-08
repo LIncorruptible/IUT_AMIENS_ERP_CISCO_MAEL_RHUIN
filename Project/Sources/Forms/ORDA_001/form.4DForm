@@ -1,0 +1,237 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"List Box": {
+					"type": "listbox",
+					"left": 34,
+					"top": 21,
+					"width": 401,
+					"height": 470,
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"method": "ObjectMethods/List Box.4dm",
+					"dataSource": "Form:C1466.evenements",
+					"listboxType": "collection",
+					"currentItemSource": "Form:C1466.selected_evenements",
+					"columns": [
+						{
+							"header": {
+								"text": "Libelle",
+								"name": "COL_LIBELLE"
+							},
+							"name": "Colonne1",
+							"footer": {
+								"name": "Pied1"
+							},
+							"dataSource": "This:C1470.Libelle"
+						},
+						{
+							"header": {
+								"name": "COL_DATE_DEBUT",
+								"text": "Date de Début"
+							},
+							"name": "Colonne2",
+							"footer": {
+								"name": "Pied2"
+							},
+							"dataSource": "This:C1470.Date_Debut"
+						},
+						{
+							"header": {
+								"name": "COL_DATE_FIN",
+								"text": "Date de Fin"
+							},
+							"name": "Colonne3",
+							"footer": {
+								"name": "Pied3"
+							},
+							"dataSource": "This:C1470.Date_Fin"
+						}
+					]
+				},
+				"SAI_LIBELLE": {
+					"type": "input",
+					"left": 572,
+					"top": 97,
+					"width": 271,
+					"height": 32,
+					"dataSource": "Form:C1466.displayed_evenements.Libelle"
+				},
+				"SAI_DATE_DEBUT": {
+					"type": "input",
+					"left": 572,
+					"top": 160,
+					"width": 271,
+					"height": 32,
+					"dataSource": "Form:C1466.displayed_evenements.Date_Debut"
+				},
+				"SAI_DATE_FIN": {
+					"type": "input",
+					"left": 572,
+					"top": 222,
+					"width": 271,
+					"height": 32,
+					"dataSource": "Form:C1466.displayed_evenements.Date_Fin"
+				},
+				"Texte": {
+					"type": "text",
+					"text": "Libelle",
+					"top": 100,
+					"left": 458,
+					"width": 54,
+					"height": 15
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "Date de Début",
+					"top": 160,
+					"left": 455,
+					"width": 110,
+					"height": 30
+				},
+				"Texte2": {
+					"type": "text",
+					"text": "Date de Fin",
+					"top": 222,
+					"left": 458,
+					"width": 112,
+					"height": 30
+				},
+				"BTN_NEW_EVENEMENT": {
+					"type": "button",
+					"text": "Nouvel Evènement",
+					"top": 353,
+					"left": 455,
+					"width": 388,
+					"height": 59,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/BTN_NEW_EVENEMENT.4dm"
+				},
+				"BTN_SAVE_EVENEMENT": {
+					"type": "button",
+					"text": "Enregistrer Evènement",
+					"top": 274,
+					"left": 455,
+					"width": 388,
+					"height": 59,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/BTN_SAVE_EVENEMENT.4dm"
+				},
+				"BTN_DELETE_EVENEMENT": {
+					"type": "button",
+					"text": "Supprimer Evènement",
+					"top": 432,
+					"left": 455,
+					"width": 388,
+					"height": 59,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/BTN_DELETE_EVENEMENT.4dm"
+				},
+				"Zone de saisie": {
+					"type": "input",
+					"left": 455,
+					"top": 40,
+					"width": 278,
+					"height": 32,
+					"dataSource": "Form:C1466.searched_evenement"
+				},
+				"BTN_FIND_EVENEMENT": {
+					"type": "button",
+					"text": "CHERCHER",
+					"top": 35,
+					"left": 753,
+					"width": 90,
+					"height": 42,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/BTN_FIND_EVENEMENT.4dm"
+				},
+				"List Box1": {
+					"type": "listbox",
+					"left": 853,
+					"top": 21,
+					"width": 357,
+					"height": 233,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.displayed_evenements.boutiques",
+					"columns": [
+						{
+							"header": {
+								"text": "Nom de la boutique",
+								"name": "COL_NOM_BOUTIQUE"
+							},
+							"name": "Colonne4",
+							"footer": {
+								"name": "Pied4"
+							},
+							"dataSource": "This:C1470.Nom",
+							"width": 331
+						}
+					]
+				}
+			}
+		}
+	],
+	"geometryStamp": 75,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}
