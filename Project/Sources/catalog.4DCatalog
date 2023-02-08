@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="IUT_BD_RHUIN_MAEL" uuid="9BF34062815E6A40B4F0FF4F5FBBD347" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="EVENEMENT" uuid="AB04AB7692FE4E42975B5585495088ED" id="1" leave_tag_on_delete="true" prevent_journaling="true">
+		<field name="ID" uuid="DD40B9E1CE3D3C4B8E13EED40712B0A3" type="4" unique="true" autosequence="true" id="1"/>
+		<field name="Libelle" uuid="51C0CC83B7C8EE4080250D56F716F0E7" type="10" limiting_length="255" not_null="true" id="2"/>
+		<field name="Date_Debut" uuid="4DE472C978EFB74982C15D64CF005C2F" type="8" id="3"/>
+		<field name="Date_Fin" uuid="6B503964CD8C2846A61FA15E5EC3F4C2" type="8" id="4"/>
+		<primary_key field_name="ID" field_uuid="DD40B9E1CE3D3C4B8E13EED40712B0A3"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="18.666664123535" top="60" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="BOUTIQUE" uuid="F9282DAD17EA4B4AA1F55744317E69D2" id="2" leave_tag_on_delete="true" prevent_journaling="true">
+		<field name="ID" uuid="5813321F80BAED4CB4E70A0EACD1D614" type="4" unique="true" autosequence="true" id="1"/>
+		<field name="Nom" uuid="B1C99A6B26AC8E42892F61F08287A947" type="10" limiting_length="255" not_null="true" id="2"/>
+		<field name="ID_EVENEMENT" uuid="B4F0222F5B9A704895C902071B74D1BE" type="4" id="3"/>
+		<primary_key field_name="ID" field_uuid="5813321F80BAED4CB4E70A0EACD1D614"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="18.666664123535" top="335.00006103516" width="149.33334350586" height="171.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="UTILISATEUR" uuid="BADCA07B1A1337498EF200292A7E0D98" id="3">
+		<field name="ID" uuid="604F2F5F846D64488C036F9978547950" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Nom" uuid="6A6F0ABDCEAA1A438089AE8AB0EAB255" type="10" limiting_length="255" id="2"/>
+		<field name="Prenom" uuid="7384CB55D70E024AA2DD1702ACBE804B" type="10" limiting_length="255" id="3"/>
+		<field name="Email" uuid="2067B0841354144FAAC7F9A48CB226E5" type="10" limiting_length="255" id="4"/>
+		<field name="Password_hash" uuid="A1E20B8F2DEF104892D0519FF7892FB2" type="10" limiting_length="255" id="5"/>
+		<field name="Solde" uuid="BAF01517A40F59498A5E48B757C3D9B4" type="6" id="6"/>
+		<primary_key field_name="ID" field_uuid="604F2F5F846D64488C036F9978547950"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="510.33334350586" top="60" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(PARTICIPATION)" uuid="68B684CD33D9984BBEFBFAAABD6E577A" id="4" hide_in_REST="true">
+		<field name="ID" uuid="2F2BE227BCB75B4F82009809D4DAB0E7" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<primary_key field_name="ID" field_uuid="2F2BE227BCB75B4F82009809D4DAB0E7"/>
+		<table_extra trashed="true">
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="259" top="245" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="PARTICIPE" uuid="3058E132D060E543B7A891BCC3EA58B2" id="5">
+		<field name="ID" uuid="451D9C2B2DAD964496ED7AAEDEB24E26" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="ID_EVENEMENT" uuid="29AFDF4DD1E1094782AF8391EB586C24" type="4" id="2"/>
+		<field name="ID_UTILISATEUR" uuid="6D8616B3122FC9428A5ABD6631B00382" type="4" id="3"/>
+		<field name="EST_VIP" uuid="E656F8C16E3B0D4C93E1C1EF669B0046" type="1" id="4"/>
+		<field name="Nbre_Jours" uuid="B3F586199636AB4DAC058272FF22AE48" type="3" id="5"/>
+		<primary_key field_name="ID" field_uuid="451D9C2B2DAD964496ED7AAEDEB24E26"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="265.66665649414" top="64" width="148" height="168.66537475586"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="ARTICLE" uuid="F5E651775E8EC5459F9567AB1CABBC38" id="6">
+		<field name="ID" uuid="E3FA5451EFF7D14C83F92C68AF38E6D6" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="ID_BOUTIQUE" uuid="16BCF88A73CEDA48910E7EC3EB401686" type="4" never_null="true" id="2"/>
+		<field name="Libelle" uuid="2B60376E104BEE469D1A540E24630630" type="10" limiting_length="255" id="3"/>
+		<field name="Prix_HT" uuid="51B0435C3DE9F644A38C03CABA167DE5" type="6" id="4"/>
+		<field name="Taux_TVA" uuid="6955D64013454644B601FF3D5069A2C8" type="6" id="5"/>
+		<primary_key field_name="ID" field_uuid="E3FA5451EFF7D14C83F92C68AF38E6D6"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="17.999977111816" top="610.66650390625" width="134.66667175293" height="177.99871826172"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="TICKET" uuid="54DDACDFCDE1644BAE4B95C4921597FD" id="7">
+		<field name="ID" uuid="5D8EA9F7273F644E9DC8F2AB820E2B67" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="ID_BOUTIQUE" uuid="926E68746664D049B41562BC0FF91779" type="4" id="2"/>
+		<field name="ID_UTILISATEUR" uuid="EFD531EC6992F54B845300304CB0610F" type="4" id="3"/>
+		<field name="Date_Ticket" uuid="78F1DEC7BA375F479B948337CC424843" type="8" id="4"/>
+		<field name="Heure_Ticket" uuid="C27750A73100124F9539181EFF70D343" type="9" id="5"/>
+		<field name="Total_Ticket_HT" uuid="21D145766EC90C409E8AA05C34BBD217" type="6" id="6"/>
+		<field name="Total_Ticket_TVA" uuid="679DD768AB95034BBFD8F97B5A14FC71" type="6" id="7"/>
+		<field name="Total_Ticket_TTC" uuid="A6E3791C29FE76419478A4845803D0D3" type="6" id="8"/>
+		<primary_key field_name="ID" field_uuid="5D8EA9F7273F644E9DC8F2AB820E2B67"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="8">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="272.66665649414" top="328.00006103516" width="156" height="218.66537475586"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="TICKET_DETAIL" uuid="A3F50973EBB53540B1BE36C9516F3EA4" id="8">
+		<field name="ID" uuid="BFB576BFB057444D818E02D9F2DE27E8" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="ID_TICKET" uuid="9B83D85390F8084B92854B572F4D79BF" type="4" id="2"/>
+		<field name="ID_ARTICLE" uuid="B268033E811BBC469C2F450047B738B4" type="4" id="3"/>
+		<field name="Quantite" uuid="AEA376083BE29347BF3B740AA9460ACD" type="3" id="4"/>
+		<field name="Prix_Unitaire_HT" uuid="5BD0750F77CCD740A0C5C5231764FC4D" type="6" id="5"/>
+		<field name="Taux_TVA" uuid="2D1BD92FD44E6940B5DDE2DA30BDCC15" type="6" id="6"/>
+		<field name="Montant_TVA" uuid="A2E352A2FF01E14FABC327CD1E062933" type="6" id="7"/>
+		<field name="Montant_TTC" uuid="141A23E23111C14BA12D00A2E3D0E657" type="6" id="8"/>
+		<primary_key field_name="ID" field_uuid="BFB576BFB057444D818E02D9F2DE27E8"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="8">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="263.33334350586" top="597.33312988281" width="142.66668701172" height="213.99871826172"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="CREDIT" uuid="2DEEAA8A2D6F7B47A3C7EE57548B06AC" id="9">
+		<field name="ID" uuid="B7DD67A60761974EB9EC3A4BAB78FA58" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="ID_UTILISATEUR" uuid="94268E7A6A13F54EADBA55A468BFD139" type="4" id="2"/>
+		<field name="ID_BORNE_CREDIT" uuid="318055EFED4CA04788D2C3A02F2D1E87" type="4" id="3"/>
+		<field name="Date_Credit" uuid="B75CF1C198A07047962A55ABFA6C6264" type="8" id="4"/>
+		<field name="Heure_Credit" uuid="AAE678626512D645BC15B5D3EC45B33B" type="9" id="5"/>
+		<primary_key field_name="ID" field_uuid="B7DD67A60761974EB9EC3A4BAB78FA58"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="775.33337402344" top="54.666656494141" width="166.66668701172" height="172.66535949707"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="BORNE_CREDIT" uuid="0C12EA9388108549AD501E899DDA66DF" id="10">
+		<field name="ID" uuid="3B52D90C3DA8384BB416569C53ADD31D" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="ID_CREDIT" uuid="615AB1918F9F3845A4652D227E367533" type="4" id="2"/>
+		<field name="ID_EVENEMENT" uuid="84EFB19C29321945828D1129C9449244" type="4" id="3"/>
+		<field name="Libelle" uuid="44F56335D567CB40B1C64D59AFE87631" type="10" limiting_length="255" id="4"/>
+		<primary_key field_name="ID" field_uuid="3B52D90C3DA8384BB416569C53ADD31D"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="777.33337402344" top="367.33331298828" width="152" height="180.66534423828"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation uuid="672A2B05BA550847A1740E29E8C62416" name_Nto1="fk_evenementBoutique_M1R" name_1toN="fk_evenementBoutique" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+		<related_field kind="source">
+			<field_ref uuid="B4F0222F5B9A704895C902071B74D1BE" name="ID_EVENEMENT">
+				<table_ref uuid="F9282DAD17EA4B4AA1F55744317E69D2" name="BOUTIQUE"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="DD40B9E1CE3D3C4B8E13EED40712B0A3" name="ID">
+				<table_ref uuid="AB04AB7692FE4E42975B5585495088ED" name="EVENEMENT"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="237" green="211" blue="181" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="300E25044A3C91488BA84049DD7E0178" name_Nto1="Lien_27" name_1toN="Lien_27_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+		<related_field kind="source">
+			<field_ref uuid="29AFDF4DD1E1094782AF8391EB586C24" name="ID_EVENEMENT">
+				<table_ref uuid="3058E132D060E543B7A891BCC3EA58B2" name="PARTICIPE"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="DD40B9E1CE3D3C4B8E13EED40712B0A3" name="ID">
+				<table_ref uuid="AB04AB7692FE4E42975B5585495088ED" name="EVENEMENT"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="150" green="216" blue="175" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="34C6BCFB3F0F01488716A7AE897DFA56" name_Nto1="Lien_28" name_1toN="Lien_28_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+		<related_field kind="source">
+			<field_ref uuid="6D8616B3122FC9428A5ABD6631B00382" name="ID_UTILISATEUR">
+				<table_ref uuid="3058E132D060E543B7A891BCC3EA58B2" name="PARTICIPE"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="604F2F5F846D64488C036F9978547950" name="ID">
+				<table_ref uuid="BADCA07B1A1337498EF200292A7E0D98" name="UTILISATEUR"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="114" green="209" blue="221" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="732A872D26CF194CBC4B465C4B2D018F" name_Nto1="Lien_29" name_1toN="Lien_29_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+		<related_field kind="source">
+			<field_ref uuid="926E68746664D049B41562BC0FF91779" name="ID_BOUTIQUE">
+				<table_ref uuid="54DDACDFCDE1644BAE4B95C4921597FD" name="TICKET"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="5813321F80BAED4CB4E70A0EACD1D614" name="ID">
+				<table_ref uuid="F9282DAD17EA4B4AA1F55744317E69D2" name="BOUTIQUE"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="249" green="130" blue="127" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="9A7A13866A39904583429664ECEA9E6B" name_Nto1="Lien_30" name_1toN="Lien_30_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+		<related_field kind="source">
+			<field_ref uuid="EFD531EC6992F54B845300304CB0610F" name="ID_UTILISATEUR">
+				<table_ref uuid="54DDACDFCDE1644BAE4B95C4921597FD" name="TICKET"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="604F2F5F846D64488C036F9978547950" name="ID">
+				<table_ref uuid="BADCA07B1A1337498EF200292A7E0D98" name="UTILISATEUR"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="181" green="145" blue="209" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="F8A6A1FCC1BB5A43BCC9974C2D455125" name_Nto1="Lien_38" name_1toN="Lien_38_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+		<related_field kind="source">
+			<field_ref uuid="9B83D85390F8084B92854B572F4D79BF" name="ID_TICKET">
+				<table_ref uuid="A3F50973EBB53540B1BE36C9516F3EA4" name="TICKET_DETAIL"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="5D8EA9F7273F644E9DC8F2AB820E2B67" name="ID">
+				<table_ref uuid="54DDACDFCDE1644BAE4B95C4921597FD" name="TICKET"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="226" green="158" blue="214" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="3B6D555F7FDCCE4490BA661B237C84B9" name_Nto1="Lien_32" name_1toN="Lien_32_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+		<related_field kind="source">
+			<field_ref uuid="B268033E811BBC469C2F450047B738B4" name="ID_ARTICLE">
+				<table_ref uuid="A3F50973EBB53540B1BE36C9516F3EA4" name="TICKET_DETAIL"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="E3FA5451EFF7D14C83F92C68AF38E6D6" name="ID">
+				<table_ref uuid="F5E651775E8EC5459F9567AB1CABBC38" name="ARTICLE"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="153" blue="63" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="D42A8F7E3B708A4BB230DD501194E20E" name_Nto1="Lien_33" name_1toN="Lien_33_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+		<related_field kind="source">
+			<field_ref uuid="16BCF88A73CEDA48910E7EC3EB401686" name="ID_BOUTIQUE">
+				<table_ref uuid="F5E651775E8EC5459F9567AB1CABBC38" name="ARTICLE"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="5813321F80BAED4CB4E70A0EACD1D614" name="ID">
+				<table_ref uuid="F9282DAD17EA4B4AA1F55744317E69D2" name="BOUTIQUE"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="252" green="191" blue="73" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="D4EDD2DB35AFD84FB5AECD0A225A1757" name_Nto1="Lien_34" name_1toN="Lien_34_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+		<related_field kind="source">
+			<field_ref uuid="94268E7A6A13F54EADBA55A468BFD139" name="ID_UTILISATEUR">
+				<table_ref uuid="2DEEAA8A2D6F7B47A3C7EE57548B06AC" name="CREDIT"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="604F2F5F846D64488C036F9978547950" name="ID">
+				<table_ref uuid="BADCA07B1A1337498EF200292A7E0D98" name="UTILISATEUR"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="181" green="223" blue="149" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="6FBFBB28E3946445AD654A9348828463" name_Nto1="Lien_36" name_1toN="Lien_36_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="615AB1918F9F3845A4652D227E367533" name="ID_CREDIT">
+				<table_ref uuid="0C12EA9388108549AD501E899DDA66DF" name="BORNE_CREDIT"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="B7DD67A60761974EB9EC3A4BAB78FA58" name="ID">
+				<table_ref uuid="2DEEAA8A2D6F7B47A3C7EE57548B06AC" name="CREDIT"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="224" green="234" blue="104" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="28826D2DED4ADF43A9218788438C96AD" name_Nto1="Lien_37" name_1toN="Lien_37_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+		<related_field kind="source">
+			<field_ref uuid="84EFB19C29321945828D1129C9449244" name="ID_EVENEMENT">
+				<table_ref uuid="0C12EA9388108549AD501E899DDA66DF" name="BORNE_CREDIT"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="DD40B9E1CE3D3C4B8E13EED40712B0A3" name="ID">
+				<table_ref uuid="AB04AB7692FE4E42975B5585495088ED" name="EVENEMENT"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="168" green="206" blue="226" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<index kind="regular" uuid="090036E24573BC47837DF796D0D4CF1F" type="7">
+		<field_ref uuid="29AFDF4DD1E1094782AF8391EB586C24" name="ID_EVENEMENT">
+			<table_ref uuid="3058E132D060E543B7A891BCC3EA58B2" name="PARTICIPE"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="15A58D7AA78FA94EAD8EC8BC9B76F7B3" type="7">
+		<field_ref uuid="3B52D90C3DA8384BB416569C53ADD31D" name="ID">
+			<table_ref uuid="0C12EA9388108549AD501E899DDA66DF" name="BORNE_CREDIT"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="32F9893FC70E634A85ED34425426055D" type="7">
+		<field_ref uuid="16BCF88A73CEDA48910E7EC3EB401686" name="ID_BOUTIQUE">
+			<table_ref uuid="F5E651775E8EC5459F9567AB1CABBC38" name="ARTICLE"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="4EC572D18A05114E94A50437C41DF682" type="7">
+		<field_ref uuid="5D8EA9F7273F644E9DC8F2AB820E2B67" name="ID">
+			<table_ref uuid="54DDACDFCDE1644BAE4B95C4921597FD" name="TICKET"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="666631426469394FA4D52F0E2ECBD439" type="7">
+		<field_ref uuid="2F2BE227BCB75B4F82009809D4DAB0E7" name="ID">
+			<table_ref uuid="68B684CD33D9984BBEFBFAAABD6E577A" name="(PARTICIPATION)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="6F97D4D21C0B9B43852DF176B102B40E" type="7">
+		<field_ref uuid="451D9C2B2DAD964496ED7AAEDEB24E26" name="ID">
+			<table_ref uuid="3058E132D060E543B7A891BCC3EA58B2" name="PARTICIPE"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="77306009B785A6478C8749D3DD22FA96" type="7">
+		<field_ref uuid="BFB576BFB057444D818E02D9F2DE27E8" name="ID">
+			<table_ref uuid="A3F50973EBB53540B1BE36C9516F3EA4" name="TICKET_DETAIL"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="81A75BCBDE2F7045A55C68F1E1882DC3" type="1">
+		<field_ref uuid="DD40B9E1CE3D3C4B8E13EED40712B0A3" name="ID">
+			<table_ref uuid="AB04AB7692FE4E42975B5585495088ED" name="EVENEMENT"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="98023AB4CADB2F4DB001B09FFF0E9602" type="7">
+		<field_ref uuid="604F2F5F846D64488C036F9978547950" name="ID">
+			<table_ref uuid="BADCA07B1A1337498EF200292A7E0D98" name="UTILISATEUR"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="9D3412ED6602AF4AB5BB1BC621FBF65B" type="7">
+		<field_ref uuid="6D8616B3122FC9428A5ABD6631B00382" name="ID_UTILISATEUR">
+			<table_ref uuid="3058E132D060E543B7A891BCC3EA58B2" name="PARTICIPE"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B7668C47A106554F87B5885C8BE7BD71" type="1">
+		<field_ref uuid="5813321F80BAED4CB4E70A0EACD1D614" name="ID">
+			<table_ref uuid="F9282DAD17EA4B4AA1F55744317E69D2" name="BOUTIQUE"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="E7CEF9F97F88FB43B893F62A4FF1243A" type="7">
+		<field_ref uuid="B7DD67A60761974EB9EC3A4BAB78FA58" name="ID">
+			<table_ref uuid="2DEEAA8A2D6F7B47A3C7EE57548B06AC" name="CREDIT"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="F4FD281081CEAA4FBF0D27B4A13D52FC" type="7">
+		<field_ref uuid="E3FA5451EFF7D14C83F92C68AF38E6D6" name="ID">
+			<table_ref uuid="F5E651775E8EC5459F9567AB1CABBC38" name="ARTICLE"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0">
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>

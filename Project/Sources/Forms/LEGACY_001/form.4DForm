@@ -1,0 +1,217 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"List Box": {
+					"type": "listbox",
+					"left": 24,
+					"top": 30,
+					"width": 548,
+					"height": 329,
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"listboxType": "currentSelection",
+					"table": "EVENEMENT",
+					"method": "ObjectMethods/List Box.4dm",
+					"columns": [
+						{
+							"header": {
+								"name": "id",
+								"text": "Identifiant",
+								"dataSource": ""
+							},
+							"name": "ID1",
+							"footer": {
+								"name": "Pied4"
+							},
+							"dataSource": "[EVENEMENT:1]ID:1"
+						},
+						{
+							"header": {
+								"text": "Libelle",
+								"name": "L"
+							},
+							"name": "Libelle",
+							"footer": {
+								"name": "Pied1"
+							},
+							"dataSource": "[EVENEMENT:1]Libelle:2"
+						},
+						{
+							"header": {
+								"name": "D_D",
+								"text": "Date Début"
+							},
+							"name": "Date Début",
+							"footer": {
+								"name": "Pied2"
+							},
+							"dataSource": "[EVENEMENT:1]Date_Debut:3"
+						},
+						{
+							"header": {
+								"name": "D_F",
+								"text": "Date Fin"
+							},
+							"name": "Date Fin",
+							"footer": {
+								"name": "Pied3"
+							},
+							"dataSource": "[EVENEMENT:1]Date_Fin:4"
+						}
+					]
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 30,
+					"left": 607,
+					"width": 440,
+					"height": 329
+				},
+				"CREATE": {
+					"type": "button",
+					"text": "Nouveau",
+					"top": 296,
+					"left": 629,
+					"width": 92,
+					"height": 51,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/CREATE.4dm"
+				},
+				"DELETE": {
+					"type": "button",
+					"text": "Supprimer",
+					"top": 296,
+					"left": 939,
+					"width": 92,
+					"height": 51,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/DELETE.4dm"
+				},
+				"SAVE": {
+					"type": "button",
+					"text": "Enregistrer",
+					"top": 296,
+					"left": 832,
+					"width": 92,
+					"height": 51,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/SAVE.4dm"
+				},
+				"LIB": {
+					"type": "input",
+					"left": 779,
+					"top": 57,
+					"width": 252,
+					"height": 32,
+					"dataSource": "[EVENEMENT:1]Libelle:2"
+				},
+				"DATE_D": {
+					"type": "input",
+					"left": 779,
+					"top": 127,
+					"width": 252,
+					"height": 32,
+					"dataSource": "[EVENEMENT:1]Date_Debut:3"
+				},
+				"DATE_F": {
+					"type": "input",
+					"left": 779,
+					"top": 209,
+					"width": 252,
+					"height": 32,
+					"dataSource": "[EVENEMENT:1]Date_Fin:4"
+				},
+				"Texte": {
+					"type": "text",
+					"text": "Libelle",
+					"top": 57,
+					"left": 623,
+					"width": 91,
+					"height": 30
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "Date Debut",
+					"top": 127,
+					"left": 626,
+					"width": 82,
+					"height": 30
+				},
+				"Texte2": {
+					"type": "text",
+					"text": "Date Fin",
+					"top": 211,
+					"left": 630,
+					"width": 84,
+					"height": 30
+				},
+				"MODIFY": {
+					"type": "button",
+					"text": "Modifier",
+					"top": 296,
+					"left": 729,
+					"width": 92,
+					"height": 51,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/MODIFY.4dm"
+				}
+			}
+		}
+	],
+	"geometryStamp": 72,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

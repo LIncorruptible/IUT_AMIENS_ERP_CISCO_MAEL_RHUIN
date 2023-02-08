@@ -1,0 +1,180 @@
+{
+	"editors": [
+		{
+			"type": "explorer"
+		},
+		{
+			"type": "form",
+			"id": 219,
+			"formName": "LEGACY_001"
+		},
+		{
+			"type": "method",
+			"id": 2147483625,
+			"codeDescriptor": {
+				"type": 2,
+				"formName": "LEGACY_001",
+				"objectName": "MODIFY",
+				"methodPath": "/SOURCES/Forms/LEGACY_001/ObjectMethods/MODIFY.4dm"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483629,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "web_loadEvenements"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483624,
+			"codeDescriptor": {
+				"type": 2,
+				"formName": "LEGACY_001",
+				"objectName": "NEW",
+				"methodPath": "/SOURCES/Forms/LEGACY_001/ObjectMethods/CREATE.4dm"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483630,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "ui_evenements_display"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483626,
+			"codeDescriptor": {
+				"type": 2,
+				"formName": "LEGACY_001",
+				"objectName": "List Box",
+				"methodPath": "/SOURCES/Forms/LEGACY_001/ObjectMethods/List Box.4dm"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483627,
+			"codeDescriptor": {
+				"type": 2,
+				"formName": "LEGACY_001",
+				"objectName": "MODIFY",
+				"methodPath": "/SOURCES/Forms/LEGACY_001/ObjectMethods/SAVE.4dm"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483644,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "load_evenements"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483646,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "dialog_LEGACY_001"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483645,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "lanceur_LEGACY_001"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483628,
+			"codeDescriptor": {
+				"type": 2,
+				"formName": "LEGACY_001",
+				"objectName": "DELETE",
+				"methodPath": "/SOURCES/Forms/LEGACY_001/ObjectMethods/DELETE.4dm"
+			}
+		},
+		{
+			"type": "structure"
+		},
+		{
+			"type": "method",
+			"id": 2147483631,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "TD_011"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483632,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "TD_010"
+			}
+		},
+		{
+			"type": "toolbox"
+		},
+		{
+			"type": "method",
+			"id": 2147483633,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "TD_009"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483634,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "TD_008"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483635,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "TD_007"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483636,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "TD_006"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483637,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "TD_005"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483638,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "TD_004"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483639,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "TD_003_3"
+			}
+		}
+	]
+}
