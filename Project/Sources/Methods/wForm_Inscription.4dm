@@ -36,6 +36,14 @@ If ($result.error_code=0)
 		$e_utilisateur.Password_hash:=Generate digest:C1147($parameters.w_password; SHA256 digest:K66:4)
 		
 		$e_utilisateur.save()
+		
+		var web_context : Object
+		If (web_context=Null:C1517)
+			web_context:=New object:C1471
+		End if 
+		
+		web_context.utilisateur:=$e_utilisateur
+		
 	Else 
 		$result.error_code:=-3
 		$result.error_message:="L'utilisateur existe déjà !"

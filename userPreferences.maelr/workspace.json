@@ -2,7 +2,7 @@
 	"editors": [
 		{
 			"type": "method",
-			"id": 2147483610,
+			"id": 2147483625,
 			"codeDescriptor": {
 				"type": 1,
 				"methodName": "wForm_Connection"
@@ -13,7 +13,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483626,
+			"id": 2147483624,
 			"codeDescriptor": {
 				"type": 1,
 				"methodName": "wForm_Inscription"
@@ -21,7 +21,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483611,
+			"id": 2147483630,
 			"codeDescriptor": {
 				"type": 1,
 				"methodName": "tools_getArguments"
@@ -29,7 +29,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483627,
+			"id": 2147483626,
 			"codeDescriptor": {
 				"type": 1,
 				"methodName": "web_orda_loadEvenements"
@@ -45,7 +45,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483613,
+			"id": 2147483611,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "ORDA_001",
@@ -58,7 +58,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483629,
+			"id": 2147483628,
 			"codeDescriptor": {
 				"type": 1,
 				"methodName": "ui_load_evenements"
@@ -71,7 +71,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483614,
+			"id": 2147483612,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "ORDA_001",
@@ -81,7 +81,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483615,
+			"id": 2147483613,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "ORDA_001",
@@ -91,7 +91,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483616,
+			"id": 2147483614,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "ORDA_001",
@@ -101,7 +101,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483617,
+			"id": 2147483615,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "ORDA_001",
@@ -111,7 +111,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483618,
+			"id": 2147483616,
 			"codeDescriptor": {
 				"type": 3,
 				"formName": "ORDA_001",
@@ -120,7 +120,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483630,
+			"id": 2147483629,
 			"codeDescriptor": {
 				"type": 1,
 				"methodName": "ui_evenements_display"
@@ -128,7 +128,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483628,
+			"id": 2147483627,
 			"codeDescriptor": {
 				"type": 1,
 				"methodName": "web_loadEvenements"
@@ -136,7 +136,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483619,
+			"id": 2147483617,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "LEGACY_001",
@@ -146,7 +146,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483620,
+			"id": 2147483618,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "LEGACY_001",
@@ -156,7 +156,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483621,
+			"id": 2147483619,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "LEGACY_001",
@@ -166,7 +166,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483622,
+			"id": 2147483620,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "LEGACY_001",
@@ -200,7 +200,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483623,
+			"id": 2147483621,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "LEGACY_001",

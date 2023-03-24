@@ -28,7 +28,13 @@ If ($result.error_code=0)
 		$e_utilisateur:=$s_utilisateurs.first()
 		
 		If ($e_utilisateur.Password_hash=Generate digest:C1147($parameters.w_password; SHA256 digest:K66:4))
-			//ALERT("Utilisateur connecté")
+			
+			var web_context : Object
+			If (web_context=Null:C1517)
+				web_context:=New object:C1471
+			End if 
+			web_context.utilisateur:=$e_utilisateur
+			
 		Else 
 			$result.error_code:=-2
 			$result.error_message:="Mot de passe incorrect !"
