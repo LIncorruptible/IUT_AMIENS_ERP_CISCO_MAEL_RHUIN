@@ -1,4 +1,4 @@
-Nommer toutes les liaisons du schéma conceptuel
+Nommer toutes les liaisons du schéma conceptuel [DONE]
 
 Ajouter la possibilité d'ajouter/modifier une boutique à partir d'un evenement sélectionné :
 	- Ajout de Bouton

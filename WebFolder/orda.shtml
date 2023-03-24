@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>TITLE</title>
+		<link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/styles.css?vers=1">
+
+
+		<script src="/vendors/jquery.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/TableDnD/0.9.1/jquery.tablednd.js" integrity="sha256-d3rtug+Hg1GZPB7Y/yTcRixO/wlI78+2m08tosoRn7A=" crossorigin="anonymous"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js'></script> -->
+
+		<script src="/scripts/script.js?vers=2"></script>
+
+	</head>
+	<body>
+			<h1>Formulaire ORDA</h1>
+			<div class="container mt-3">
+				<!--#4DSCRIPT/web_orda_loadEvenements-->
+						
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">Libellé</th>
+							<th scope="col">Date de début</th>
+							<th scope="col">Date de fin</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!--#4DEACH $evenement in web_context.selectionEvenements-->
+						<tr>
+							<td class="text-start"><!--#4DTEXT $evenement.Libelle--></td>
+							<td class="text-center"><!--#4DTEXT $evenement.Date_Debut--></td>
+							<td class="text-end"><!--#4DTEXT $evenement.Date_Fin--></td>
+						</tr>
+						<!--#4DENDEACH-->
+					</tbody>  
+				</table>
+			</div>
+	</body>
+	<script src="/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+</html>

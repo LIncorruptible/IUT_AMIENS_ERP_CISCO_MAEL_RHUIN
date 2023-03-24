@@ -141,7 +141,7 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
-	<relation uuid="672A2B05BA550847A1740E29E8C62416" name_Nto1="evenement" name_1toN="boutiques" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+	<relation uuid="672A2B05BA550847A1740E29E8C62416" name_Nto1="evenement_boutique" name_1toN="boutiques_evenement" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
 		<related_field kind="source">
 			<field_ref uuid="B4F0222F5B9A704895C902071B74D1BE" name="ID_EVENEMENT">
 				<table_ref uuid="F9282DAD17EA4B4AA1F55744317E69D2" name="BOUTIQUE"/>
@@ -158,7 +158,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="300E25044A3C91488BA84049DD7E0178" name_Nto1="evenement_participe" name_1toN="participations" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+	<relation uuid="300E25044A3C91488BA84049DD7E0178" name_Nto1="evenement_participe" name_1toN="participations_evenement" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
 		<related_field kind="source">
 			<field_ref uuid="29AFDF4DD1E1094782AF8391EB586C24" name="ID_EVENEMENT">
 				<table_ref uuid="3058E132D060E543B7A891BCC3EA58B2" name="PARTICIPE"/>
@@ -175,7 +175,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="34C6BCFB3F0F01488716A7AE897DFA56" name_Nto1="Lien_28" name_1toN="Lien_28_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+	<relation uuid="34C6BCFB3F0F01488716A7AE897DFA56" name_Nto1="utilisateur_participe" name_1toN="participations_utilisateur" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
 		<related_field kind="source">
 			<field_ref uuid="6D8616B3122FC9428A5ABD6631B00382" name="ID_UTILISATEUR">
 				<table_ref uuid="3058E132D060E543B7A891BCC3EA58B2" name="PARTICIPE"/>
@@ -192,7 +192,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="732A872D26CF194CBC4B465C4B2D018F" name_Nto1="Lien_29" name_1toN="Lien_29_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+	<relation uuid="732A872D26CF194CBC4B465C4B2D018F" name_Nto1="boutique_ticket" name_1toN="tickets_boutique" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
 		<related_field kind="source">
 			<field_ref uuid="926E68746664D049B41562BC0FF91779" name="ID_BOUTIQUE">
 				<table_ref uuid="54DDACDFCDE1644BAE4B95C4921597FD" name="TICKET"/>
@@ -209,7 +209,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="9A7A13866A39904583429664ECEA9E6B" name_Nto1="Lien_30" name_1toN="Lien_30_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+	<relation uuid="9A7A13866A39904583429664ECEA9E6B" name_Nto1="utilisateur_ticket" name_1toN="tickets_utilisateur" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
 		<related_field kind="source">
 			<field_ref uuid="EFD531EC6992F54B845300304CB0610F" name="ID_UTILISATEUR">
 				<table_ref uuid="54DDACDFCDE1644BAE4B95C4921597FD" name="TICKET"/>
@@ -226,7 +226,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="F8A6A1FCC1BB5A43BCC9974C2D455125" name_Nto1="Lien_38" name_1toN="Lien_38_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+	<relation uuid="F8A6A1FCC1BB5A43BCC9974C2D455125" name_Nto1="ticket_detail" name_1toN="details_ticket" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
 		<related_field kind="source">
 			<field_ref uuid="9B83D85390F8084B92854B572F4D79BF" name="ID_TICKET">
 				<table_ref uuid="A3F50973EBB53540B1BE36C9516F3EA4" name="TICKET_DETAIL"/>
@@ -243,7 +243,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="3B6D555F7FDCCE4490BA661B237C84B9" name_Nto1="Lien_32" name_1toN="Lien_32_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+	<relation uuid="3B6D555F7FDCCE4490BA661B237C84B9" name_Nto1="article_ticket" name_1toN="tickets_article" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
 		<related_field kind="source">
 			<field_ref uuid="B268033E811BBC469C2F450047B738B4" name="ID_ARTICLE">
 				<table_ref uuid="A3F50973EBB53540B1BE36C9516F3EA4" name="TICKET_DETAIL"/>
@@ -260,7 +260,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="D42A8F7E3B708A4BB230DD501194E20E" name_Nto1="Lien_33" name_1toN="Lien_33_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+	<relation uuid="D42A8F7E3B708A4BB230DD501194E20E" name_Nto1="boutique_article" name_1toN="articles_boutique" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
 		<related_field kind="source">
 			<field_ref uuid="16BCF88A73CEDA48910E7EC3EB401686" name="ID_BOUTIQUE">
 				<table_ref uuid="F5E651775E8EC5459F9567AB1CABBC38" name="ARTICLE"/>
@@ -277,7 +277,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="D4EDD2DB35AFD84FB5AECD0A225A1757" name_Nto1="Lien_34" name_1toN="Lien_34_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+	<relation uuid="D4EDD2DB35AFD84FB5AECD0A225A1757" name_Nto1="utilisateur_credit" name_1toN="credits_utilisateur" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
 		<related_field kind="source">
 			<field_ref uuid="94268E7A6A13F54EADBA55A468BFD139" name="ID_UTILISATEUR">
 				<table_ref uuid="2DEEAA8A2D6F7B47A3C7EE57548B06AC" name="CREDIT"/>
@@ -294,7 +294,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="6FBFBB28E3946445AD654A9348828463" name_Nto1="Lien_36" name_1toN="Lien_36_retour" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+	<relation uuid="6FBFBB28E3946445AD654A9348828463" name_Nto1="credit_borne" name_1toN="bornes_credit" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
 		<related_field kind="source">
 			<field_ref uuid="615AB1918F9F3845A4652D227E367533" name="ID_CREDIT">
 				<table_ref uuid="0C12EA9388108549AD501E899DDA66DF" name="BORNE_CREDIT"/>
@@ -311,7 +311,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="28826D2DED4ADF43A9218788438C96AD" name_Nto1="evenement_borne" name_1toN="bornes_de_credit" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
+	<relation uuid="28826D2DED4ADF43A9218788438C96AD" name_Nto1="evenement_borne" name_1toN="bornes_evenement" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="reject">
 		<related_field kind="source">
 			<field_ref uuid="84EFB19C29321945828D1129C9449244" name="ID_EVENEMENT">
 				<table_ref uuid="0C12EA9388108549AD501E899DDA66DF" name="BORNE_CREDIT"/>

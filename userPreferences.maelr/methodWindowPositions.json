@@ -208,5 +208,29 @@
 		"top": 242,
 		"width": 1000,
 		"height": 488
+	},
+	"Sources/Methods/web_orda_loadEvenements.4dm": {
+		"left": 0,
+		"top": 109,
+		"width": 1536,
+		"height": 810
+	},
+	"Sources/Methods/wForm_Inscription.4dm": {
+		"left": 0,
+		"top": 108,
+		"width": 1536,
+		"height": 810
+	},
+	"Sources/Methods/tools_getArguments.4dm": {
+		"left": 0,
+		"top": 109,
+		"width": 1536,
+		"height": 810
+	},
+	"Sources/Methods/wForm_Connection.4dm": {
+		"left": 0,
+		"top": 79,
+		"width": 1536,
+		"height": 810
 	}
 }
