@@ -12,11 +12,31 @@
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/TableDnD/0.9.1/jquery.tablednd.js" integrity="sha256-d3rtug+Hg1GZPB7Y/yTcRixO/wlI78+2m08tosoRn7A=" crossorigin="anonymous"></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js'></script> -->
 
-		<script src="/scripts/script.js?vers=2"></script>
+		<script src="/scripts/script_logout.js?vers=2"></script>
 
 	</head>
 	<body>
 			<h1>Formulaire ORDA</h1>
+			
+			<div class="container mt-3">
+				<!--#4DIF (web_context.utilisateur = Null)-->
+
+				<h3>Vous n'êtes pas connecté</h3>
+
+				<a href="/inscription.shtml" class="btn btn-primary">S'inscrire</a>
+				<a href="/login.shtml" class="btn btn-primary">Se connecter</a>				
+
+				<!--#4DELSE-->
+
+				<h3>Vous êtes connecté en tant que <b> <!--#4DTEXT web_context.utilisateur.Prenom--> <!--#4DTEXT web_context.utilisateur.Nom--> </b></h3>
+				
+				<form id="form_logout">
+					<input type="submit" class="btn btn-primary" id="btn_logout" value="Se déconnecter">
+				</form>
+				
+				<!--#4DENDIF-->
+			</div>
+
 			<div class="container mt-3">
 				<!--#4DSCRIPT/web_orda_loadEvenements-->
 						

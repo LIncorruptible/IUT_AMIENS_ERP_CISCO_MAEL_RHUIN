@@ -2,6 +2,17 @@
 	"editors": [
 		{
 			"type": "method",
+			"id": 2147483609,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "wForm_Deconnection"
+			}
+		},
+		{
+			"type": "explorer"
+		},
+		{
+			"type": "method",
 			"id": 2147483625,
 			"codeDescriptor": {
 				"type": 1,
@@ -9,7 +20,15 @@
 			}
 		},
 		{
-			"type": "explorer"
+			"type": "method",
+			"id": 2147483608,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "web_orda_loadBoutiques"
+			}
+		},
+		{
+			"type": "structure"
 		},
 		{
 			"type": "method",
@@ -21,14 +40,6 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483630,
-			"codeDescriptor": {
-				"type": 1,
-				"methodName": "tools_getArguments"
-			}
-		},
-		{
-			"type": "method",
 			"id": 2147483626,
 			"codeDescriptor": {
 				"type": 1,
@@ -36,7 +47,12 @@
 			}
 		},
 		{
-			"type": "structure"
+			"type": "method",
+			"id": 2147483630,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "tools_getArguments"
+			}
 		},
 		{
 			"type": "form",

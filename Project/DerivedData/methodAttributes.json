@@ -66,6 +66,9 @@
 				"publishedWeb": true
 			}
 		},
+		"web_orda_loadBoutiques": {
+			"timeStamp": "2023-04-14T10:20:16Z"
+		},
 		"web_orda_loadEvenements": {
 			"timeStamp": "2023-03-03T11:01:29Z",
 			"attributes": {
@@ -73,13 +76,19 @@
 			}
 		},
 		"wForm_Connection": {
-			"timeStamp": "2023-03-24T11:42:12Z",
+			"timeStamp": "2023-03-24T11:56:14Z",
+			"attributes": {
+				"publishedWeb": true
+			}
+		},
+		"wForm_Deconnection": {
+			"timeStamp": "2023-04-14T10:49:45Z",
 			"attributes": {
 				"publishedWeb": true
 			}
 		},
 		"wForm_Inscription": {
-			"timeStamp": "2023-03-24T11:05:56Z",
+			"timeStamp": "2023-03-24T11:55:01Z",
 			"attributes": {
 				"publishedWeb": true
 			}
