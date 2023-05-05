@@ -1,9 +1,7 @@
 //%attributes = {}
-C_TEXT:C284($0; $1)
-C_LONGINT:C283($ID_EVENEMENT)
+C_OBJECT:C1216($0; $1)
+C_OBJECT:C1216($es_boutiques)
 
-$ID_EVENEMENT:=1  // insérez ici l'ID de l'événement pour lequel vous voulez charger les boutiques
+$es_boutiques:=ds:C1482.BOUTIQUE.all().orderBy("Nom asc")
 
-ALL RECORDS:C47([BOUTIQUE:2])
-QUERY:C277([BOUTIQUE:2]; [BOUTIQUE:2]ID_EVENEMENT:3=$ID_EVENEMENT)
-ORDER BY:C49([BOUTIQUE:2]; [BOUTIQUE:2]Nom:2; >)
+WEB SEND TEXT:C677(JSON Stringify:C1217($es_boutiques.toCollection()); "application/json")

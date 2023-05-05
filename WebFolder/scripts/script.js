@@ -28,5 +28,29 @@ $(document).ready(function(){
         }
       );
   });
+
+  $('#btn_boutiques').click(function (event) {
+    event.preventDefault();
+  
+    $.ajax(
+      {
+        method: "POST",
+        url : "/4DACTION/web_orda_loadBoutiques"
+      }
+    )
+    .done(
+      function(response){
+        let str = "";
+  
+        for(let i = 0; i< response.length; i++){
+          str += response[i].Nom + "<br>";
+        }
+  
+        $("#liste_boutiques").html(str);
+      }
+    );
+  });
 });
+
+
 

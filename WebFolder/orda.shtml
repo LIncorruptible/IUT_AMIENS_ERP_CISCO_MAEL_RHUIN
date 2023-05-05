@@ -14,6 +14,8 @@
 
 		<script src="/scripts/script_logout.js?vers=2"></script>
 
+		<script src="/scripts/script.js?vers=2"></script>
+
 	</head>
 	<body>
 			<h1>Formulaire ORDA</h1>
@@ -52,10 +54,16 @@
 								<td class="text-center"><!--#4DTEXT $evenement.Date_Debut--></td>
 								<td class="text-center"><!--#4DTEXT $evenement.Date_Fin--></td>
 							</tr>
-							<!--#4DENDEACH-->
+						<!--#4DENDEACH-->
 						</tbody>  
 					</table>
 				</div>
+
+				<form>
+					<input type="submit" class="btn btn-primary" id="btn_boutiques" value="Charger les boutiques">
+				</form>
+
+				<div id="liste_boutiques"></div>
 				
 				<!--#4DENDIF-->
 			</div>
