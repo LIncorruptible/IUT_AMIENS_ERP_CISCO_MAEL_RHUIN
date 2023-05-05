@@ -33,31 +33,31 @@
 				<form id="form_logout">
 					<input type="submit" class="btn btn-primary" id="btn_logout" value="Se déconnecter">
 				</form>
+
+				<div class="container mt-3">
+					<!--#4DSCRIPT/web_orda_loadEvenements-->
+							
+					<table class="table">
+						<thead>
+							<tr>
+								<th class="text-start" scope="col">Libellé</th>
+								<th class="text-center" scope="col">Date de début</th>
+								<th class="text-center" scope="col">Date de fin</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!--#4DEACH $evenement in web_context.selectionEvenements-->
+							<tr>
+								<td class="text-start"><!--#4DTEXT $evenement.Libelle--></td>
+								<td class="text-center"><!--#4DTEXT $evenement.Date_Debut--></td>
+								<td class="text-center"><!--#4DTEXT $evenement.Date_Fin--></td>
+							</tr>
+							<!--#4DENDEACH-->
+						</tbody>  
+					</table>
+				</div>
 				
 				<!--#4DENDIF-->
-			</div>
-
-			<div class="container mt-3">
-				<!--#4DSCRIPT/web_orda_loadEvenements-->
-						
-				<table class="table">
-					<thead>
-						<tr>
-							<th scope="col">Libellé</th>
-							<th scope="col">Date de début</th>
-							<th scope="col">Date de fin</th>
-						</tr>
-					</thead>
-					<tbody>
-						<!--#4DEACH $evenement in web_context.selectionEvenements-->
-						<tr>
-							<td class="text-start"><!--#4DTEXT $evenement.Libelle--></td>
-							<td class="text-center"><!--#4DTEXT $evenement.Date_Debut--></td>
-							<td class="text-end"><!--#4DTEXT $evenement.Date_Fin--></td>
-						</tr>
-						<!--#4DENDEACH-->
-					</tbody>  
-				</table>
 			</div>
 	</body>
 	<script src="/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
