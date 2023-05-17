@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"publishedWeb":true}
 C_OBJECT:C1216($0; $1)
 C_OBJECT:C1216($es_boutiques)
 

@@ -1,14 +1,14 @@
 {
-	"Sources/Forms/LEGACY_001/form.4DForm": {
-		"left": 0,
-		"top": 108,
-		"width": 1536,
-		"height": 810
-	},
 	"Sources/Forms/ORDA_001/form.4DForm": {
 		"left": 0,
 		"top": 108,
 		"width": 1522,
 		"height": 854
+	},
+	"Sources/Forms/LEGACY_001/form.4DForm": {
+		"left": 0,
+		"top": 79,
+		"width": 1522,
+		"height": 796
 	}
 }

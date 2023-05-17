@@ -67,7 +67,10 @@
 			}
 		},
 		"web_orda_loadBoutiques": {
-			"timeStamp": "2023-05-05T13:01:56Z"
+			"timeStamp": "2023-05-17T06:42:01Z",
+			"attributes": {
+				"publishedWeb": true
+			}
 		},
 		"web_orda_loadEvenements": {
 			"timeStamp": "2023-03-03T11:01:29Z",
@@ -89,6 +92,12 @@
 		},
 		"wForm_Inscription": {
 			"timeStamp": "2023-03-24T11:55:01Z",
+			"attributes": {
+				"publishedWeb": true
+			}
+		},
+		"wForm_Modification_Compte": {
+			"timeStamp": "2023-05-17T07:53:55Z",
 			"attributes": {
 				"publishedWeb": true
 			}

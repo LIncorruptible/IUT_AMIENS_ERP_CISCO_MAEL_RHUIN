@@ -2,10 +2,10 @@
 	"editors": [
 		{
 			"type": "method",
-			"id": 2147483626,
+			"id": 2147483607,
 			"codeDescriptor": {
 				"type": 1,
-				"methodName": "web_orda_loadBoutiques"
+				"methodName": "wForm_Modification_Compte"
 			}
 		},
 		{
@@ -13,10 +13,10 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483623,
+			"id": 2147483622,
 			"codeDescriptor": {
 				"type": 1,
-				"methodName": "wForm_Deconnection"
+				"methodName": "wForm_Inscription"
 			}
 		},
 		{
@@ -28,14 +28,32 @@
 			}
 		},
 		{
+			"type": "method",
+			"id": 2147483626,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "web_orda_loadBoutiques"
+			}
+		},
+		{
 			"type": "structure"
 		},
 		{
+			"type": "form",
+			"id": 219,
+			"formName": "LEGACY_001"
+		},
+		{
+			"type": "form",
+			"id": 220,
+			"formName": "ORDA_001"
+		},
+		{
 			"type": "method",
-			"id": 2147483622,
+			"id": 2147483623,
 			"codeDescriptor": {
 				"type": 1,
-				"methodName": "wForm_Inscription"
+				"methodName": "wForm_Deconnection"
 			}
 		},
 		{
@@ -53,11 +71,6 @@
 				"type": 1,
 				"methodName": "tools_getArguments"
 			}
-		},
-		{
-			"type": "form",
-			"id": 220,
-			"formName": "ORDA_001"
 		},
 		{
 			"type": "method",
@@ -79,11 +92,6 @@
 				"type": 1,
 				"methodName": "ui_load_evenements"
 			}
-		},
-		{
-			"type": "form",
-			"id": 219,
-			"formName": "LEGACY_001"
 		},
 		{
 			"type": "method",

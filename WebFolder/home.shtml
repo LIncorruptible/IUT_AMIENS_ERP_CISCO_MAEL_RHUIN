@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script src="/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
 		<title>HOME du serveur Web de 4D</title>
 	    <style type="text/css">
 		<!--
@@ -27,5 +28,9 @@
                 <!--#4DENDLOOP-->
             </p>
 		</div>
+
+		<a href="orda.shtml">ORDA</a>
+		<a href="login.shtml">Login</a>
+		<a href="inscription.shtml">Inscription</a>
 	</body>
 </html>

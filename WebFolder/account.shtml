@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte</title>
+    <link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles.css?vers=1">
+    <script src="/vendors/jquery.min.js"></script>
+    <script src="scripts/script_account.js"></script>
+</head>
+    <body>
+        <h1>Données du compte</h1>
+        <div class="container mt-3">
+
+            <form id="form_inscription">
+
+                <div class="mb-3">
+                    <label for="w_email" class="form-label">Adresse e-mail</label>
+                    <input name="w_email" type="email" class="form-control" id="w_email" placeholder="name@example.com" value=<!--#4DTEXT web_context.utilisateur.Email-->>
+                </div>
+
+                <div class="mb-3">
+                    <label for="w_prenom" class="form-label">Prénom</label>
+                    <input name="w_prenom" type="text" class="form-control" id="w_prenom" placeholder="Prénom" value=<!--#4DTEXT web_context.utilisateur.Prenom--> >
+                </div>
+
+                <div class="mb-3">
+                    <label for="w_nom" class="form-label">Nom</label>
+                    <input name="w_nom" type="text" class="form-control" id="w_nom" placeholder="Nom" value=<!--#4DTEXT web_context.utilisateur.Nom--> >
+                </div>
+
+                <div class="mb-3">
+                    <label for="w_password" class="form-label">Mot de passe</label>
+                    <input name="w_password" type="password" class="form-control" id="w_password" placeholder="">
+                </div>
+
+                <input type="submit" class="btn btn-primary" id="btn_inscription" value="Continuer">
+
+
+            </form>
+            
+        </div>
+    </body>
+</html>

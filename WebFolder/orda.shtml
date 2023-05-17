@@ -36,6 +36,8 @@
 					<input type="submit" class="btn btn-primary" id="btn_logout" value="Se déconnecter">
 				</form>
 
+				<a href="/account.shtml" class="btn btn-primary">Modifier le compte</a>
+
 				<div class="container mt-3">
 					<!--#4DSCRIPT/web_orda_loadEvenements-->
 							
@@ -59,11 +61,7 @@
 					</table>
 				</div>
 
-				<form>
-					<input type="submit" class="btn btn-primary" id="btn_boutiques" value="Charger les boutiques">
-				</form>
-
-				<div id="liste_boutiques"></div>
+				<a href="/boutiques.shtml" class="btn btn-primary">Boutiques</a>
 				
 				<!--#4DENDIF-->
 			</div>
