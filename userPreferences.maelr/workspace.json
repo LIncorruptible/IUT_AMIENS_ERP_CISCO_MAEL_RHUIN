@@ -1,15 +1,18 @@
 {
 	"editors": [
 		{
+			"type": "structure"
+		},
+		{
+			"type": "explorer"
+		},
+		{
 			"type": "method",
-			"id": 2147483607,
+			"id": 2147483621,
 			"codeDescriptor": {
 				"type": 1,
 				"methodName": "wForm_Modification_Compte"
 			}
-		},
-		{
-			"type": "explorer"
 		},
 		{
 			"type": "method",
@@ -34,9 +37,6 @@
 				"type": 1,
 				"methodName": "web_orda_loadBoutiques"
 			}
-		},
-		{
-			"type": "structure"
 		},
 		{
 			"type": "form",
@@ -74,7 +74,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483609,
+			"id": 2147483608,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "ORDA_001",
@@ -95,7 +95,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483610,
+			"id": 2147483609,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "ORDA_001",
@@ -105,7 +105,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483611,
+			"id": 2147483610,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "ORDA_001",
@@ -115,7 +115,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483612,
+			"id": 2147483611,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "ORDA_001",
@@ -125,7 +125,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483613,
+			"id": 2147483612,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "ORDA_001",
@@ -135,7 +135,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483614,
+			"id": 2147483613,
 			"codeDescriptor": {
 				"type": 3,
 				"formName": "ORDA_001",
@@ -160,7 +160,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483615,
+			"id": 2147483614,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "LEGACY_001",
@@ -170,7 +170,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483616,
+			"id": 2147483615,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "LEGACY_001",
@@ -180,7 +180,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483617,
+			"id": 2147483616,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "LEGACY_001",
@@ -190,7 +190,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483618,
+			"id": 2147483617,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "LEGACY_001",
@@ -224,7 +224,7 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483619,
+			"id": 2147483618,
 			"codeDescriptor": {
 				"type": 2,
 				"formName": "LEGACY_001",
